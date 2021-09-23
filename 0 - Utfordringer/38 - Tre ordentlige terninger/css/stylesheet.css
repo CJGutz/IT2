@@ -1,0 +1,13 @@
+.terning {
+    height: 150px;
+    width: 150px;
+    background-color: gray;
+    display: inline-block;
+    /* margin: 0 0 0 40px; */
+}
+
+.holder {
+    /* background-color: red; */
+    height: 150px;
+    margin: 150px auto;
+}

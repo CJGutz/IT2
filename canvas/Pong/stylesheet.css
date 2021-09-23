@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#c1 {
+    background-color: black;
+    image-rendering: high-quality;
+    border: black solid 1px;
+    display: block;
+    margin: auto;
+}
+
+input {
+    margin: 50px 0 10px 50px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmregister</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <div id="registrerBoks">
+        Tittel <br>
+        <input type="text" placeholder="Filmtittel" id="tittel">
+        <br>
+
+        Filmbeskrivelse <br>
+        <textarea  id="omFilm" cols="40" rows="7" placeholder="Beskrivelse"></textarea>
+        <br>
+
+        Årstall <br>
+        <input type="number" placeholder="Årstall" id="aar" value="2020">
+        <br>
+
+        Aldersgrense <br>
+        <select id="grense">
+            <option value="a">Tillat for alle</option>
+            <option value="6">6 år</option>
+            <option value="9">9 år</option>
+            <option value="12">12 år</option>
+            <option value="15">15 år</option>
+            <option value="18">18 år</option>
+        </select>
+        <br>
+
+        Format <br>
+        <input type="checkbox" id="kino">Kino</input> <br>
+        <input type="checkbox" id="dvd">DVD</input> <br>
+        <input type="checkbox" id="tv">TV</input> <br>
+        <br>
+
+        Fått Oscar? <br>
+        <input type="radio" id="ja" name="oscar">Ja</input> <br>
+        <input type="radio" id="nei" name="oscar" checked>Nei</input> <br>
+
+        <button id="registrer">Registrer</button>
+        
+    </div>
+
+    <div id="vis">
+        <p id="fTittel"></p>
+        <p id="fBeskrivelse"></p>
+        <p id="fAar"></p>
+        <p id="fGrense"></p>
+        <p id="fFormat"></p>
+        <p id="fOscar"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#c1 {
+    background-color: rgb(201, 196, 196);
+}
+
+div {
+    margin: 100px 30%;
+}

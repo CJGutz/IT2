@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#resultatDiv {
+    height: 120px;
+    margin: auto;
+    width: 684px;
+}
+
+canvas {
+    /* display:block nødvendig for at margin:auto skal fungere */
+    display: block;
+    margin: auto;
+    background-color: bisque;
+}
+
+.parti {
+    margin: 3px;
+    text-align: center;
+    float: left;
+}
+
+img {
+    pointer-events: none;
+  } 

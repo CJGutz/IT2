@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sjakklokke</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div id="venstre">
+        <h3>Angi tid hver person skal ha tilsammen (i sekunder)</h3>
+        <input type="number" id="tidPerPers">
+        <h3>Angi tid per runde (i sekunder)</h3>
+        <input id="rundeTidInput" type="number">
+        <h3>Angi rekkefølgen på spillerne</h3> <button onclick="leggTilSpiller()">Legg til spiller</button>
+        <span></span>
+        <h1 id="timer"></h1>
+        <h1 id="rundeTid"></h1>
+        <h1 id="tur"></h1>
+        <button id="start" onclick="start()">Start</button>
+        <audio src="galt.mp3" type="mp3"></audio>
+    </div>
+    <div id="hoyre">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

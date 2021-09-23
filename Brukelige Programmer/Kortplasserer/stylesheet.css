@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(3, 116, 3);
+    overflow: hidden;
+}
+
+#body {
+    background-color: rgb(3, 116, 3);
+    margin: 0px;
+    padding: 0;
+    height: 400px;
+    z-index: -10000;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    margin: 300px 50%;  
+    border-radius: 10%;
+    z-index: 1;
+}
+
+input {
+    position: absolute;
+}
+
+p {
+    font-weight: 900;
+}
+ 
+#info {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}

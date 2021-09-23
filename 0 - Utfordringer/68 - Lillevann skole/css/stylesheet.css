@@ -1,0 +1,12 @@
+#c1 {
+    background-color: white;
+    float: left;
+}
+
+body {
+    background-color: rgb(206, 125, 125);
+}
+
+select {
+    margin: 30px;
+}

@@ -1,0 +1,12 @@
+#c1 {
+    background-color: white;
+    float: left;
+}
+
+body {
+    background-color: white;
+}
+
+input, button {
+    margin: 5px;
+}

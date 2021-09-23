@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Sprettball</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: gray;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #mittCanvas {
+            position: absolute;
+            border: solid 1px black;
+            background-color: white
+        }
+
+        #lydAvPaa {
+            position: absolute;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="mittCanvas"></canvas>
+    <div id="lydAvPaa"><input type="checkbox"> Lyd</div>
+
+    <script>
+
+        var lydDiv = document.querySelector("#lydAvPaa");
+        var canvas = document.querySelector("#mittCanvas");
+        ctx = canvas.getContext("2d");
+
+        //Sett størrelse på canvas
+        canvas.width = window.innerWidth - 20;
+        canvas.height = window.innerHeight - 20;
+
+        //Plasser canvas midt på siden
+        var venstre = (window.innerWidth / 2) - (canvas.width / 2);
+        var topp = (window.innerHeight / 2) - (canvas.height / 2)
+        canvas.style.left = venstre + "px";
+        canvas.style.top = topp + "px";
+
+        //Plasser lydknapp i nedre høyre hjørne
+        lydDiv.style.left = canvas.width - 45 + "px";
+        lydDiv.style.top = canvas.height - 15 + "px";
+
+        class Ball {
+            constructor(startx, starty, farge, radius, fartx, farty) {
+                this.x = startx;
+                this.y = starty;
+                this.farge = farge;
+                this.r = radius;
+                this.dx = fartx;
+                this.dy = farty;
+
+            }
+
+            flytt() {
+                this.x += this.dx;
+                this.y += this.dy;
+            }
+
+            sprett() {
+                if (this.x >= canvas.width - this.r || this.x <= this.r) {
+                    this.dx = -this.dx;
+                }
+                if (this.y >= canvas.height - this.r || this.y <= this.r) {
+                    this.dy = -this.dy;
+                }
+            }
+
+            tegn() {
+                var fargetone = 180 + Math.floor(this.dx - this.dy) * 40;
+                ctx.fillStyle = "hsl(" + fargetone + ", 70%, 70%)";
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2)
+                ctx.fill();
+            }
+
+            oppdater() {
+                this.sprett();
+                this.flytt();
+                this.tegn();
+            }
+        }
+
+        const antallBaller = 10;
+        var baller = [];
+
+        for (var i = 0; i < antallBaller; i++) {
+            var ball = new Ball(Math.random() * canvas.width * 0.8 + 100, 
+                                Math.random() * canvas.height * 0.8 + 100, 
+                                "rgb(" + Math.random() * 255 + "," + Math.random() * 255 + "," + Math.random() * 255 + ")",
+                                Math.random() * canvas.width / 20, Math.random() * 20 - 10, Math.random() * 20 - 10)
+            baller.push(ball)
+        }
+
+        //Starter animasjonen
+        setInterval(frame, 8);
+
+        function frame() {
+            //Fyll hele canvas med delsiv gjennomsiktig hvit
+            ctx.fillStyle = "rgba(255, 255, 255, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            baller.forEach((ball) => {
+                ball.oppdater();
+            });
+        }
+    </script>
+
+</body>
+
+</html>

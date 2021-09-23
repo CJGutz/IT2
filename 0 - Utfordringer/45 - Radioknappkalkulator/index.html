@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiknappkalkulator</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <h1>?</h1>
+    <div id="tips"></div>
+    <div id="kalkulator">
+        <h4 id="regner">Skriv inn tall...</h4>
+        <h2 id="svar">Svar</h2>
+
+        <input type="number" id="t1" oninput="regnut()" max="1000000000000000000000000">
+        <input type="number" id="t2" oninput="regnut()" max="1000000000000000000000000"> <br>
+
+        <input type="radio" name="operatør" value="+" id="pluss" checked onclick="regnut()"> +
+        <input type="radio" name="operatør" value="-" id="minus"onclick="regnut()"> - <br>
+        <input type="radio" name="operatør" value="*" id="gange"onclick="regnut()"> x
+        <input type="radio" name="operatør" value="/" id="dele" onclick="regnut()"> / <br>
+
+        <button onclick="regnut()" id="erlik">=</button>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

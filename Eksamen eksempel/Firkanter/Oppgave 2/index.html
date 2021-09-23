@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 2</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    Bunnlinje:  <input type="number" id="bunn" min="0" value="0">
+    Topplinje:  <input type="number" id="topp" min="0" value="0">
+    Hoyde:  <input type="number" id="hoyde" min="0" value="0">
+    Forskyvning:  <input type="number" id="forskyvning" min="0" value="0">
+    <button id="leggTil">Legg til</button>
+    <button id="slett" onclick="slett()">Slett</button>
+    <table>
+        <tr id="bla">
+            <td>Type firkant</td>
+            <td>Bunnlinje</td>
+            <td>Topplinje</td>
+            <td>Høyde</td>
+            <td>Forskyvning</td>
+            <td>Areal</td>
+        </tr>
+    </table>
+    <canvas width="700" height="500"></canvas>
+    <script src="script.js"></script>
+</body>
+
+</html>

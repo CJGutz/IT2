@@ -1,0 +1,27 @@
+#firkant {
+    background-color: rgb(240, 142, 142);
+    margin: 20px;
+}
+
+#innpakning {
+    display: table;
+    margin: 50px auto;
+}
+
+* {
+    margin: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+
+input {
+    position: fixed;
+    top: 45px;
+    left: 50px;
+}
+
+button {
+    position: fixed;
+    top: 45px;
+    left: 105px;
+}

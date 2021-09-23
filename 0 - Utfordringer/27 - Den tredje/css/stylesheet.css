@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+}
+
+div {
+    background-color: green;
+    height: 30px;
+    width: 100px;
+}
+
+.gul {
+    background-color: yellow;
+}

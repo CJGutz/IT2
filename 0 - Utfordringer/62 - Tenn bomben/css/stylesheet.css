@@ -1,0 +1,10 @@
+#bombe {
+    margin-left: 650px;
+    margin-top: 300px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+button {
+    position: absolute;
+}

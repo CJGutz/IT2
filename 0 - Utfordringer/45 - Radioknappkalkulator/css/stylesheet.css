@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#kalkulator {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%, 0%);
+    position: absolute;
+}
+
+input {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+h2 {
+    float: right;
+    margin-right: 10px;
+    font-size: 25px;
+    background-color: rgb(184, 179, 179);
+    padding: 5px;
+}
+
+h3 {
+    color: rgb(202, 25, 25);
+}
+
+button {
+  color: white; /* hvit tekstfarge */
+  padding: 5px; /* luft inni knappen */
+  text-shadow: 0 -1px 1px #719ab8; /* skygge på teksten */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* lys grå kantlinje */
+  border-radius: 4px; /* avrunder kantene */
+  background: linear-gradient(rgba(255,255,255,0.2), transparent);
+  background-color: #4f6370; /* blå bakgrunnsfarge */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7); /* skygge bak knappen */
+  outline: none; /* fjerne ekstra kantlinje */
+  cursor: pointer; /* gjør om musepekeren til en hånd */
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+button:active {
+  transform: translate(1px, 1px); /* 1 px til høyre og 1 px ned */
+  background-color: rgb(107, 136, 146);
+}
+button.ok {
+  background-color: #66BB00; 
+}
+
+button.avbryt {
+  background-color: #CC0000; 
+}
+
+h1 {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: greenyellow;
+  width: 20px;
+  border-radius: 15%;
+}
+
+#tips {
+  margin-left: 10px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+

@@ -1,0 +1,12 @@
+body {
+    background-color: darkgreen;
+}
+
+#hit, #stand {
+    cursor: pointer;
+    background-color: white;
+    width: 50px;
+    padding: 5px;
+    margin: 10px;
+    float: right;
+}

@@ -1,0 +1,13 @@
+div {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+}
+
+.fortsettRad {
+    float: left;
+}
+
+body {
+    background-color: #aaaacc;
+}

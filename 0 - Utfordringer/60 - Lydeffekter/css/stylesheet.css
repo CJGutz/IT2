@@ -1,0 +1,21 @@
+li {
+    cursor: pointer;
+    margin: 10px;
+    width: 30px;
+}
+
+body {
+    background-color: aqua;
+}
+
+#knapp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: gray solid 2px;
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+}

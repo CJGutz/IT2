@@ -1,0 +1,16 @@
+div {
+    border-radius: 50%;
+}
+
+.ring {
+    width: 200px;
+    height: 200px;
+    /* background-color: rgb(255, 150, 150); */
+}
+
+.prikk {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    transform: translate(100%,100%);
+}

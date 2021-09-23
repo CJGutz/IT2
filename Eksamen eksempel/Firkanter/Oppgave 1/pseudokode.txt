@@ -1,0 +1,23 @@
+//1 cm = 50 px
+//alt i cm
+
+Lager alle elementer og legger
+til riktig attributter til hvert element
+Lager kanpp, tallinput, tekst for 
+feilmelding, lyd og firkant
+
+tallArray = 1,2,3,4,5,6,7,8,9
+
+funksjon trykket på knappen
+    IF lengden til tallArray == null
+        skriv Det er ingen flere tilgjengelige bredder
+    IF brukerinput finnes i tallArray
+        regn ut hoyde
+        regn ut bredde 
+        regn ut areal
+        sett style til firkant element
+        fjern tallet fra tallArray
+        spill lyd
+    ELSE 
+        skriv Bredde ikke tilgjengelig
+

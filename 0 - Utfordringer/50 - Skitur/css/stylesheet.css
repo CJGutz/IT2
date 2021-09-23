@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: linear-gradient(to left, #ffffff, #d1cece);
+}
+
+
+img {
+    float: right;
+    margin-right: 300;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    border-radius: 10%;
+}
+
+select {
+    float: left;
+    clear: both;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+button {
+    margin: 5px 0 0 5px;
+    border: 1px solid black;
+    padding: 3px 7px;
+    border-radius: 30%;
+    background-color: red;
+    font-size: 20px;
+    text-shadow: 0 -1px 1px #335166;
+}
+
+button:active {
+    transform: translate(1px, 1px);
+  }

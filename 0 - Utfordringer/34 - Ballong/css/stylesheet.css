@@ -1,0 +1,15 @@
+div {
+    border-radius: 50%;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    margin: auto;
+
+
+}
+
+body {
+    background-color: gray;
+    margin: 0px;
+}

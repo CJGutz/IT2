@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 50px;
+            width: 100% - 50px;
+            height: 300px;
+            background-color: black;
+        }
+
+        div:not(.container) {
+            background-color: gray;
+            margin: 1px;
+        }
+
+        #c1 {
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: stretch;
+        }
+
+        #c1 div {
+            flex-grow: 1;
+            height: 100%;
+        }
+
+        #c2 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #c2 div:nth-child(2) {
+            flex-grow: 3;
+            width: 100%;
+        }
+
+        #c2 div:not(div:nth-child(2)) {
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        #c3 {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        #c3 div:first-child {
+            flex-grow: 3;
+        }
+
+        #c3 div {
+            flex-grow: 1;
+        }
+
+        #c4 {
+            flex-direction: row;
+            flex-wrap: wrap;   
+            /* align-items: stretch; */
+            justify-content: flex-start;
+        }
+
+        #c4 div:first-child {
+            width: 60%;
+            flex-grow: 1;
+        }
+
+        #c4 div {
+            width: 25%;
+        }
+
+        #c4 div:nth-last-of-type(2) {
+            flex-grow: 3;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="c1">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" id="c2">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" id="c3">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" id="c4">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" id="c5">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" id="c6">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" id="c7">
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container" id="c8">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+li {
+    cursor: pointer;
+    margin: 10px;
+    width: 30px;
+}
+
+body {
+    background-color: aqua;
+}

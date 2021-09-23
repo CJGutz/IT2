@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+    <style>
+        div {
+            width: 50%;
+            height: 300px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+        .gul {
+            background-color: yellow;
+        }
+
+        .blaa {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var bodyEl = document.querySelector("body");
+        var divEl;
+
+        divEl = document.createElement("div");
+        divEl.className = "gul";
+
+        //legger til en Listener som sjekker etter hendelse og utfører en funksjon
+        divEl.addEventListener("click", farge);
+        divEl.addEventListener("mousemove", posisjon)
+
+        bodyEl.appendChild(divEl);
+
+        //endrer farge til diven som har fått eventListener
+        function farge(e) {
+
+            if (e.clientY > e.clientX) {
+                if (divEl.className == "gul") {
+                    divEl.className = "blaa";
+                 } else {
+                     divEl.className = "gul";
+                 }
+            }
+        }
+
+
+
+        //Bruker e (event) som argument
+        //e er et objekt med mange ulike verdier
+        function posisjon(e) {
+            divEl.innerHTML = "X: " + e.clientX + "  Y: " + e.clientY;
+        }
+    </script>
+</body>
+</html>

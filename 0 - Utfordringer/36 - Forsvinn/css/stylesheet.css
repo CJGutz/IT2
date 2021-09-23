@@ -1,0 +1,12 @@
+.roed {
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background-color: red;
+    margin: 0 15px;
+}
+
+.boks {
+    height: 60px;
+    margin: auto;
+}
