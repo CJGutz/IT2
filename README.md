@@ -7,7 +7,7 @@ This repository contains
 
 Additional notes:
 
-In the folder "Utfordringer" 
+In the folder "0 - Utfordringer" 
 you can open index.html in a
 web browser to access all 
 tasks I handed in.
